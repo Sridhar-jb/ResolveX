@@ -1,0 +1,16 @@
+{
+  "name": "resolvex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ResolveX complaint management platform",
+  "scripts": {
+    "build": "npm install --prefix server",
+    "start": "node server/server.js",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "postinstall": "npm install --prefix server"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
