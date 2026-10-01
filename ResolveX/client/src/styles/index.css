@@ -1,0 +1,42 @@
+@import "./tokens.css";
+@import "./shell.css";
+@import "./components.css";
+@import "./pages.css";
+
+/* Toast styling that follows the ResolveX theme. */
+.Toastify__toast {
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface-solid);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  box-shadow: var(--shadow);
+}
+
+.Toastify__progress-bar {
+  background: linear-gradient(90deg, var(--cyan), var(--magenta));
+}
+
+/* Small helpers used across pages. */
+.stack { display: grid; gap: 16px; }
+.stack-sm { display: grid; gap: 10px; }
+.row { display: flex; align-items: center; gap: 10px; }
+.row-between { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.row-wrap { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.grow { flex: 1; min-width: 0; }
+.muted { color: var(--muted); }
+.faint { color: var(--faint); }
+.small { font-size: 12.5px; }
+.strong { font-weight: 600; }
+.right { text-align: right; }
+.center { text-align: center; }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nowrap { white-space: nowrap; }
+.mt-sm { margin-top: 8px; }
+.mt { margin-top: 16px; }
+.hide-sm { display: initial; }
+
+@media (max-width: 720px) {
+  .hide-sm { display: none; }
+}
